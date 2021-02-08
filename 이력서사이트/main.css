@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-size: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+
+  background-image: url("/img/썸네일.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+}
+
+.bg {
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.navbar_logo i {
+  inline-size: 20px;
+  padding-right: 15px;
+  color: rgb(0, 204, 255);
+}
+
+.navbar_menu {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar_menu li {
+  padding: 8px 25px;
+}
+.navbar_menu li:hover {
+  background-color: rgba(188, 235, 135, 0.363);
+  border-radius: 4px;
+}
+
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: rgb(209, 209, 209);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_toogleBtn {
+    display: block;
+  }
+  .navbar_menu.active {
+    display: flex;
+  }
+}
+
+/*carousel*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  perspective: 600px;
+  object-fit: cover;
+}
+
+.carousel-sb {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotation 30s infinite;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+.panel img {
+  max-height: 400px;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+}
+.panel:nth-child(1) {
+  transform: rotateY(0deg) translateZ(259px);
+}
+.panel:nth-child(2) {
+  transform: rotateY(60deg) translateZ(259px);
+}
+.panel:nth-child(3) {
+  transform: rotateY(120deg) translateZ(259px);
+}
+.panel:nth-child(4) {
+  transform: rotateY(180deg) translateZ(259px);
+}
+.panel:nth-child(5) {
+  transform: rotateY(240deg) translateZ(259px);
+}
+.panel:nth-child(6) {
+  transform: rotateY(300deg) translateZ(259px);
+}
+
+@keyframes rotation {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.ment,
+.subment {
+  color: rgb(209, 209, 209);
+  text-align: center;
+}

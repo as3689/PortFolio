@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Youtube M</title>
+    <link rel="stylesheet" href="유튜브.css" />
+    <link
+      href="./아이콘/메인로고.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- 헤더-->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Premium</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+    <!-- 비디오-->
+    <section class="player">
+      <video autoplay controls src="./video.mp4"></video>
+    </section>
+    <div class="infoAndUpNext">
+      <section class="info">
+        <!--메타데이터-->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#codingPark</li>
+            <li>#Portfolio</li>
+          </ul>
+          <div class="titleNbutton">
+            <span class="title">
+              유튜브 모바일 웹사이트 클론코딩<br />
+              조카 광고영상을 이용한 유튜브 사이트 클론코딩
+              포트폴리오자료입니다. 유튜브를 참고하여 HTML과 CSS를 이용하여
+              유튜브 사이트를 클론 코딩하였습니다.
+            </span>
+            <button class="moreB"><i class="fas fa-caret-down"></i></button>
+          </div>
+          <span class="views">조회수 1,004회 1주전</span>
+        </div>
+        <!-- 액션-->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>공유</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>저장</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-charging-station"></i
+              ><span><a href="/index.html">메인으로</a></span>
+            </button>
+          </li>
+        </ul>
+        <!--채널정보-->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./내사진.JPG" alt="" />
+            <div class="info">
+              <span class="name">Portfolio by Park</span>
+              <span class="subscribers">구독자 20만명</span>
+            </div>
+          </div>
+          <button class="subscribe">구독중</button>
+        </div>
+      </section>
+      <section class="UpNext">
+        <span class="title">다음 동영상</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img src="./다음영상/방화수류정.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="title">방화수류정 야간여행과 카페구경 in 수원</span>
+              <span class="name">Portfolio by Park</span>
+              <span class="views">조회수 2만회</span>
+            </div>
+            <button class="moreB"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="./다음영상/여수낮바다.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="title">낮에 가보는 여수 쨍쨍한 낮 바다 in 여수</span>
+              <span class="name">Portfolio by Park</span>
+              <span class="views">조회수 1만회</span>
+            </div>
+            <button class="moreB"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img src="./다음영상/여수야간여행.jpg" alt="" />
+            </div>
+            <div class="info">
+              <span class="title"
+                >진정한 여수는 밤이지~ 밤에 보는 여수 밤바다♪</span
+              >
+              <span class="name">Portfolio by Park</span>
+              <span class="views">조회수 2천회</span>
+            </div>
+            <button class="moreB"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
