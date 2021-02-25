@@ -11,13 +11,14 @@ body {
 
 
 .container {
-  width: 1170px;
+  width: 850px;
+  height: 100%;
   margin: 0 auto;
 }
 
 #top_menu {
   position: fixed;
-  height: 120px;
+  height: 5rem;
   left: 0;
   right: 0;
   top: 0px;
@@ -25,6 +26,11 @@ body {
   font-size: 20px;
 }
 
+#logo {
+  float: left;
+  width: 125px;
+  padding-top: 0.5rem;
+  color: #ffffff;}
 
 #logo a {
   text-decoration: none;
@@ -35,7 +41,7 @@ body {
   margin-right: 33px;
 }
 #top_menu ul li {
-  padding: 50px 0px 0px 63px;
+  padding: 1.5rem;
   float: left;
   list-style: none;
   color: #cccccc;
@@ -56,12 +62,7 @@ body {
     flex-direction: column;
   }
 }
-#logo {
-  float: left;
-  width: 125px;
-  padding-top: 30px;
-  color: #ffffff;
-}
+
 
 #contents > section {
   padding: 104px 0;
@@ -253,19 +254,14 @@ body {
   justify-content: center;
   
 }
-.column-one {
-  margin-top: -30px;
-  margin-right: 100px;
-  width: 300px;
-  float: left;
-  margin-bottom: 350px;
-  height: 20px;
+.column {
+  margin-right: 2px;
+  
   font-size: 100%;
-  vertical-align: baseline;
 }
 
-.column-one .logo {
-  height: 180px;
+.column .logo1 {
+  height: 13rem;
   position: relative;
   margin: 55px;
   top: 50px;
@@ -276,20 +272,10 @@ body {
   width: 180px;
 }
 
-.column-one .logo:hover {
+.column .logo1:hover {
   border: 3px solid #fb3d9c;
 }
-.column-two {
-  margin-top: -30px;
-  margin-right: 100px;
-  width: 300px;
-  float: left;
-  margin-bottom: 350px;
-  height: 20px;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-.column-two .logo {
+.column .logo2 {
   height: 180px;
   position: relative;
   margin: 55px;
@@ -297,32 +283,17 @@ body {
   bottom: -70px;
   border: 3px solid #f0f0f0;
   background: url(/img/개발능력.png) white no-repeat center center;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
   border-radius: 100px;
   width: 180px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+ 
 }
-.column-two .logo:hover {
+.column .logo2:hover {
   border: 3px solid #fb3d9c;
 }
-.column-two > h2 {
+.column > h2 {
   margin-bottom: 20px;
 }
-.column-three {
-  margin-top: -30px;
-  width: 300px;
-  float: left;
-  margin-bottom: 120px;
-  height: 350px;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-.column-three .logo {
+.column .logo3 {
   height: 180px;
   position: relative;
   margin: 55px;
@@ -340,7 +311,7 @@ body {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.column-three .logo:hover {
+.column.logo3:hover {
   border: 3px solid #fb3d9c;
 }
 #section2 p {
@@ -370,16 +341,16 @@ body {
 }
 
 .gallery img {
-  width: 350px;
-  height: 200px;
+  width: 260px;
+  height: 12rem;
 
   display: block;
   margin: 0px auto;
 }
 .gallery > li {
   float: left;
-  padding: 0 40px 40px;
-  width: 370px;
+  padding: 0 15px 20px;
+  width: 260px;
 }
 .gallery li a {
   display: block;
@@ -387,7 +358,7 @@ body {
   text-decoration: none;
 }
 .gallery li ul {
-  padding: 30px 30px 20px;
+  padding: 20px 20px;
   border: 1px solid rgb(255, 255, 255);
   text-decoration: none;
   list-style: none;
