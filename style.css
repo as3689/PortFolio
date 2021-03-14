@@ -250,7 +250,7 @@ body {
 #Table{
 
   display: flex;
-  
+flex-wrap: wrap;
   justify-content: center;
   
 }
@@ -261,7 +261,7 @@ body {
 }
 
 .column .logo1 {
-  height: 13rem;
+  height: 180px;
   position: relative;
   margin: 55px;
   top: 50px;
@@ -341,7 +341,7 @@ body {
 }
 
 .gallery img {
-  width: 260px;
+  width: 300px;
   height: 12rem;
 
   display: block;
@@ -349,8 +349,8 @@ body {
 }
 .gallery > li {
   float: left;
-  padding: 0 15px 20px;
-  width: 260px;
+  padding: 0 25px 40px;
+  width: 300px;
 }
 .gallery li a {
   display: block;

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - Kakao Clone</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>80%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">더보기</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span>
+                <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+                <span class="alarm"></span>
+            </span>
+        </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar--xl" src="/img/두물머리.jpeg" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">P.InTae</h4>
+                    <h6 class="user-component__subtitle">+82 010-1434-1004 <i class="fas fa-info-circle"></i></h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-alt"></i>
+                <span>캘린더</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-hdd"></i>
+                <span>서랍</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-smile-beam"></i>
+                <span>이모티콘</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-paint-brush"></i>
+                <span>테마</span>
+            </div>
+            <!-- <div class="icon-row__icon">
+                <i class="fas fa-file-invoice"></i>
+                <span>계정</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-comments"></i>
+                <span>오픈 채팅</span>
+            </div> -->
+        </div>
+        <div class="more-suggestion">
+            <h4 class="more-suggestion__title">추천 앱</h4>
+            <div class="more-suggestion__icons">
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="../img/kakaostory.png" alt="">
+                    </div>
+                    <div class="more-suggestion__icon-text">카카오 스토리</div>
+                </div>
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="../img/kakaobank.jpg" alt="">
+                    </div>
+                    <div class="more-suggestion__icon-text">카카오 뱅크</div>
+                </div>
+                <div class="more-suggestion__icon">
+                    <div class="more-suggestion__icon-image">
+                        <img src="../img/kakaoT.png" alt="">
+                    </div>
+                    <div class="more-suggestion__icon-text">카카오 T</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav_notification badge">3</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="splash-screen">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+        <img src="/img/마네키네코.png" alt="">
+        <span>스크린 크기를 줄여서 카카오톡 화면을 확인해주세요~~ 🍀 </span>
+    </div>
+    <script src="https://kit.fontawesome.com/294e36a226.js" crossorigin="anonymous"></script>
+    <script src="../src/navBadge.js"></script>
+</body>
+
+</html>

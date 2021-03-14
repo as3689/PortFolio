@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Kakao Talk Clone</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <!-- STATUS BAR -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span>80%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="welcome-header">
+    <h1 class="welcome-header__title">
+      카카오토크에 오신 것을 환영합니다.</h1>
+    <p class="welcome-header__text">
+      카카오 계정이 있으시면, 이메일 또는 전화 번호로 로그인하세요.
+    </p>
+  </header>
+
+  <form action="pages/friends.html" method="GET" id="login-form">
+    <input type="text" name="username" id="" placeholder="이메일 또는 휴대전화 번호" />
+    <input type="password" name="password" id="" placeholder="비밀번호" />
+    <input type="submit" value="로그인">
+    <a href="#">카카오 계정 또는 비밀번호 찾기</a>
+  </form>
+
+  <div id="no-mobile">
+    <img src="/img/마네키네코.jpg" alt="">
+    <span>스크린 크기를 줄여서 카카오톡 화면을 확인해주세요~~ 🍀 </span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/294e36a226.js" crossorigin="anonymous"></script>
+  <script src="src/localStorageInit.js"></script>
+</body>
+
+</html>

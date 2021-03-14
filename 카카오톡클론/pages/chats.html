@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kakao Clone</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>80%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">채팅</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span>
+                <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+                <span class="alarm"></span>
+            </span>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <a href="/pages/kakao_caht.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar" src="../img/channel.png" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">카카오톡</h4>
+                        <h6 class="user-component__subtitle">카카오 계정 로그인</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">18:00</span>
+                    <div class="badge">1</div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="/pages/friend_chat1.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar" src="/img/마네키네코.jpg" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">마네키네코</h4>
+                        <h6 class="user-component__subtitle">사진을 보냈습니다.</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">18:00</span>
+                    <div class="badge">2</div>
+                </div>
+            </div>
+        </a>
+        <a href="/pages/friend_chat2.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar" src="/img/뿌까.png" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">뿌까</h4>
+                    <h6 class="user-component__subtitle">퇴근합시다~~~~</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">18:00</span>
+                    <div class="badge">2</div>
+                </div>
+            </div>
+        </a>
+        <a href="/pages/friend_chat3.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar" src="/img/어피치.jpeg" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">어피치</h4>
+                    <h6 class="user-component__subtitle">사진을 보냈습니다.</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">17:59</span>
+                    <div class="badge">1</div>
+                </div>
+            </div>
+        </a>
+    </main>
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav_notification badge"></span>
+                    <i class="fas fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="splash-screen">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+        <img src="/img/마네키네코.jpg" alt="">
+        <span>스크린 크기를 줄여서 카카오톡 화면을 확인해주세요~~ 🍀 </span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/294e36a226.js" crossorigin="anonymous"></script>
+    <script src="../src/badge.js"></script>
+    <script src="../src/chatList.js"></script>
+</body>
+
+</html>
