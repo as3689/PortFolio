@@ -11,14 +11,14 @@ body {
 
 
 .container {
-  width: 850px;
+  /* width: 850px; */
   height: 100%;
   margin: 0 auto;
 }
 
 #top_menu {
   position: fixed;
-  height: 5rem;
+  height: 80px;
   left: 0;
   right: 0;
   top: 0px;
@@ -292,6 +292,7 @@ flex-wrap: wrap;
 }
 .column > h2 {
   margin-bottom: 20px;
+  text-align: center;
 }
 .column .logo3 {
   height: 180px;
@@ -317,6 +318,7 @@ flex-wrap: wrap;
 #section2 p {
   text-align: center;
   margin-top: 20px;
+  width: 260px;
 }
 #Content {
   display: flex;
@@ -331,6 +333,7 @@ flex-wrap: wrap;
 
 .into {
   display: flex;
+  justify-content: center;
   align-content: center;
 }
 .gallery {
