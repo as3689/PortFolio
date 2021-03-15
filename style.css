@@ -318,6 +318,7 @@ flex-wrap: wrap;
 #section2 p {
   text-align: center;
   margin-top: 20px;
+  margin: auto;
   width: 260px;
 }
 #Content {
