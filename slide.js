@@ -1,7 +1,8 @@
 $(function () {
-  let $SeeIt = $ ("#seeit");
-  let $menu = $("#top_menu ul li");
-  let $contents = $("#contents > section");
+  let $SeeIt = $ (`#seeit`);
+  let $menu = $(`#top_menu ul li`);
+  let $contents = $(`#contents > section`);
+  console.log($contents);
   
   
   
@@ -11,19 +12,20 @@ $(function () {
     let idx = $(this).index();
     let tt = $contents.eq(idx).offset().top;
     console.log(tt);
-    $("html, body").animate({ scrollTop: tt });
-    
-    /*클릭한 부분만 색변환*/
-    $(this).addClass("active").siblings().removeClass("active");
-  });
 
-  $SeeIt.click(function (event) {
-    event.preventDefault();
-    let idx = $(1).index();
-    let tt = $contents.eq(1).offset().top;
-    console.log(tt);
-    $("html, body").animate({ scrollTop: tt });
-    $(this).addClass("active").siblings().removeClass("active");
+    $(`html, body`).animate({ scrollTop: tt });
+    
+  // $SeeIt.click(function (event) {
+  //   event.preventDefault();
+  //   let idx = $(1).index();
+  //   let tt = $contents.eq(1).offset().top;
+  //   console.log(tt);
+  //   $("html, body").animate({ scrollTop: tt });
+  // });
+
+    /*클릭한 부분만 색변환*/
+   
+   $(this).addClass().siblings(`.active`).removeClass(`active`);
   });
 
   /* 스크롤 이동시 반영될 부분 */
